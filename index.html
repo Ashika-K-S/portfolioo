@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashika K S</title>
+  <link rel="icon" href="pic.jpg" type="image/gif" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("buH32_RehxGcyCO9O"); 
+  </script>
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    }
+
+   header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #333;
+}
+
+body {
+  padding-top: 60px; 
+}
+
+    
+
+    h3 span.red-text {
+      color: red;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: red !important;
+      transform: scale(1.05);
+    }
+
+    .contact-header-btn {
+      background-color: red;
+      color: rgb(255, 255, 255) !important;
+      border-radius: 20px;
+      padding: 6px 16px;
+    }
+
+    .hero-section h2:hover,
+    .hero-section h3:hover {
+      color: rgb(232, 19, 19);
+    }
+
+    .highlight-red {
+      color: red;
+    }.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem; 
+}
+
+.social-icons a {
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff4d6d; 
+}
+.social-icons i {
+  color: red;
+}
+.social-icons i {
+  color: red;
+}
+
+
+    .contact-btn {
+      background-color: red;
+      color: white;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 25px;
+      display: inline-block;
+    }
+
+    .contact-btn:hover {
+      background-color: white;
+      color: red;
+    }
+
+    .section-title {
+      color: red;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #111;
+      color: white;
+      border: 1px solid #333;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
+      border-color: red;
+    }
+
+    .skills span {
+      background-color: red;
+      padding: 6px 12px;
+      border-radius: 15px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #333;
+      margin-top: 50px;
+    }
+  .skill-circle circle.red-circle {
+    stroke-dasharray: 314;
+    stroke-linecap: round;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 2s ease-out;
+  }
+
+  .skill-circle.animate circle.red-circle {
+    stroke-dashoffset: var(--dashoffset);
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <header class="py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <h3 class="mb-0 text-uppercase">ASHIKA <span class="red-text">K S</span></h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav d-flex align-items-center gap-3">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link contact-header-btn" href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+ <section class="full-height d-flex align-items-center hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fw-bold">Hi, it's Ashika</h2>
+        <h3>I'm a <span class="highlight-red">Python Full Stack Developer</span></h3>
+        <p>I build dynamic web applications using Django, Flask, React, and more.</p>
+
+       
+        <div class="d-flex flex-wrap align-items-center gap-2 mt-3">
+          <a href="#contact" class="contact-btn">Contact Me</a>
+          <a href="Resume.pdf" download class="contact-btn">
+            <i class="bi bi-download me-1"></i>Resume
+          </a>
+        </div>
+
+        
+        <div class="social-icons mt-3">
+          <a href="https://www.instagram.com/ashika__suresh" target="_blank" rel="noopener noreferrer" class="me-3">
+            <i class="bi bi-instagram" style="font-size: 1.5rem; color: #ffffff;"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ashika-k-s-771631367" target="_blank" rel="noopener noreferrer" class="me-3">
+            <i class="bi bi-linkedin" style="font-size: 1.5rem; color: #ffffff;"></i>
+          </a>
+          <a href="https://github.com/Ashika-K-S/portfolio" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github" style="font-size: 1.5rem; color: white;"></i>
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 text-end text-center text-md-end">
+        <img src="image3.jpg" alt="Ashika Profile" class="img-fluid rounded hero-img" style="max-width: 100%; height: auto;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">About Me</h2>
+      <p class="mx-auto" style="max-width: 700px;">
+        Hi, I'm Ashika K S, a passionate Python Full Stack Developer with a strong foundation in both front-end and back-end technologies. I specialize in building scalable, responsive, and user-friendly web applications using HTML, CSS, JavaScript, Bootstrap, React, and Python (Django/Flask).
+  With hands-on experience in integrating databases like MySQL and MongoDB, I enjoy solving real-world problems through clean code, efficient design, and logical thinking. Whether it's crafting dynamic user interfaces or building powerful APIs, I aim to deliver seamless and impactful digital experiences.
+      </p>
+    </div>
+  </section>
+
+
+
+<section id="skills" class="py-5" style="background-color: #000;">
+  <div class="container text-center">
+    <h2 class="section-title text-danger mb-5">Skills</h2>
+    <div class="row justify-content-center">
+
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+  <div class="mx-auto position-relative" style="width: 120px; height: 120px;">
+    <svg width="120" height="120" class="position-absolute top-0 start-0 skill-circle">
+      <circle cx="60" cy="60" r="50" stroke="#333" stroke-width="10" fill="none" />
+      <circle cx="60" cy="60" r="50" stroke="red" stroke-width="10" fill="none"
+        class="red-circle"
+        style="--dashoffset: calc(314 - (314 * 98) / 100);" />
+    </svg>
+    <div class="rounded-circle d-flex align-items-center justify-content-center text-danger fw-bold position-relative bg-black" style="width: 120px; height: 120px;">
+      98%
+    </div>
+  </div>
+  <h5 class="mt-3 text-white">HTML</h5>
+</div>
+
+
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+  <div class="mx-auto position-relative" style="width: 120px; height: 120px;">
+    <svg width="120" height="120" class="position-absolute top-0 start-0 skill-circle">
+      <circle cx="60" cy="60" r="50" stroke="#333" stroke-width="10" fill="none" />
+      <circle cx="60" cy="60" r="50" stroke="red" stroke-width="10" fill="none"
+        class="red-circle"
+        style="--dashoffset: calc(314 - (314 * 95) / 100);" />
+    </svg>
+    <div class="rounded-circle d-flex align-items-center justify-content-center text-danger fw-bold position-relative bg-black" style="width: 120px; height: 120px;">
+      95%
+    </div>
+  </div>
+  <h5 class="mt-3 text-white">CSS</h5>
+</div>
+
+
+
+     <div class="col-6 col-md-4 col-lg-2 mb-4">
+  <div class="mx-auto position-relative" style="width: 120px; height: 120px;">
+    <svg width="120" height="120" class="position-absolute top-0 start-0 skill-circle">
+      <circle cx="60" cy="60" r="50" stroke="#333" stroke-width="10" fill="none" />
+      <circle cx="60" cy="60" r="50" stroke="red" stroke-width="10" fill="none"
+        class="red-circle"
+        style="--dashoffset: calc(314 - (314 * 85) / 100);" />
+    </svg>
+    <div class="rounded-circle d-flex align-items-center justify-content-center text-danger fw-bold position-relative bg-black" style="width: 120px; height: 120px;">
+      85%
+    </div>
+  </div>
+  <h5 class="mt-3 text-white">JAVA SCRIPT</h5>
+</div>
+
+
+      
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+  <div class="mx-auto position-relative" style="width: 120px; height: 120px;">
+    <svg width="120" height="120" class="position-absolute top-0 start-0 skill-circle">
+      <circle cx="60" cy="60" r="50" stroke="#333" stroke-width="10" fill="none" />
+      <circle cx="60" cy="60" r="50" stroke="red" stroke-width="10" fill="none"
+        class="red-circle"
+        style="--dashoffset: calc(314 - (314 * 75) / 100);" />
+    </svg>
+    <div class="rounded-circle d-flex align-items-center justify-content-center text-danger fw-bold position-relative bg-black" style="width: 120px; height: 120px;">
+      75%
+    </div>
+  </div>
+  <h5 class="mt-3 text-white">Node.js</h5>
+</div>
+
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+  <div class="mx-auto position-relative" style="width: 120px; height: 120px;">
+    <svg width="120" height="120" class="position-absolute top-0 start-0 skill-circle">
+      <circle cx="60" cy="60" r="50" stroke="#333" stroke-width="10" fill="none" />
+      <circle cx="60" cy="60" r="50" stroke="red" stroke-width="10" fill="none"
+        class="red-circle"
+        style="--dashoffset: calc(314 - (314 * 72) / 100);" />
+    </svg>
+    <div class="rounded-circle d-flex align-items-center justify-content-center text-danger fw-bold position-relative bg-black" style="width: 120px; height: 120px;">
+      72%
+    </div>
+  </div>
+  <h5 class="mt-3 text-white">REACT</h5>
+</div>
+
+
+      
+     <div class="col-6 col-md-4 col-lg-2 mb-4">
+  <div class="mx-auto position-relative" style="width: 120px; height: 120px;">
+    <svg width="120" height="120" class="position-absolute top-0 start-0 skill-circle">
+      <circle cx="60" cy="60" r="50" stroke="#333" stroke-width="10" fill="none" />
+      <circle cx="60" cy="60" r="50" stroke="red" stroke-width="10" fill="none"
+        class="red-circle"
+        style="--dashoffset: calc(314 - (314 * 78) / 100);" />
+    </svg>
+    <div class="rounded-circle d-flex align-items-center justify-content-center text-danger fw-bold position-relative bg-black" style="width: 120px; height: 120px;">
+      78%
+    </div>
+  </div>
+  <h5 class="mt-3 text-white">Python</h5>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+ 
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Services</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5>Web Development</h5>
+            <p>Building modern, responsive websites and full-stack applications with Django and React.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5>API Integration</h5>
+            <p>Creating and integrating RESTful APIs for seamless backend communication.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5>UI/UX Design</h5>
+            <p>Designing clean and intuitive user interfaces using Bootstrap and custom CSS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="projects" class="py-5 bg-dark">
+  <div class="container text-center">
+    <h2 class="section-title">Projects</h2>
+    <div class="row justify-content-center">
+
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="p1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">AI DRIVEN SIGNL</h5>
+            <p class="card-text">An AI-powered platform that enables users to learn, practice, and translate sign language in real time.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="clone.png" class="card-img-top" alt="Flight Booking Clone">
+          <div class="card-body">
+            <h5 class="card-title">Flight Booking UI Clone</h5>
+            <p class="card-text">Recreated Goibibo-like flight booking interface using HTML, CSS, and Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="navbar.png" class="card-img-top" alt="Portfolio Project">
+          <div class="card-body">
+            <h5 class="card-title">Navbar</h5>
+            <p class="card-text">Clone of w3schools navbar using HTML, CSS</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="atm.png" class="card-img-top" alt="To-Do App">
+          <div class="card-body">
+            <h5 class="card-title">Atm</h5>
+            <p class="card-text">Bank balance checking using javascript,css and html.</p>
+          </div>
+        </div>
+      </div>
+<div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="portfolio.png" class="card-img-top" alt="To-Do App">
+          <div class="card-body">
+            <h5 class="card-title">personal portfolio</h5>
+            <p class="card-text">A responsive personal portfolio site built using HTML, CSS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title text-danger">Contact</h2>
+      <hr style="border-color: red; width: 100px; margin: 10px auto;" />
+
+      <form id="contact-form" class="mt-4" style="max-width: 500px; margin: auto;">
+        <div class="mb-3 text-start">
+          <label class="form-label text-white">Name</label>
+          <input type="text" name="user_name" class="form-control" placeholder="Your Name" required 
+                style="background-color: #111; color: #fff; border: 1px solid red;">
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label text-white">Email</label>
+          <input type="email" name="user_email" class="form-control" placeholder="Your Email" required 
+                style="background-color: #111; color: #fff; border: 1px solid red;">
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label text-white">Message</label>
+          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required 
+                    style="background-color: #111; color: #fff; border: 1px solid red;"></textarea>
+        </div>
+
+        <button type="submit" class="btn w-100" 
+                style="background-color: red; color: white; font-weight: bold;">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ashika K S. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_nfs0nq4", "template_iz40uni", this)
+          .then(function () {
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset();
+          }, function (error) {
+            console.log("FAILED...", error);
+            alert("Failed to send message. Please try again.");
+          });
+      });
+    });
+    
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); 
+      }
+    });
+  });
+
+  document.querySelectorAll('.skill-circle').forEach(circle => {
+    observer.observe(circle);
+  });
+
+
+  </script>
+</body>
+</html>
